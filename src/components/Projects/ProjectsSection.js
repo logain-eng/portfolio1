@@ -8,33 +8,30 @@ const projects = [
   {
     title: "Project 1",
     description: "Simple Design With HTML & CSS",
-    image: "/pro1.jpg"
+    // image: "/pro1.jpg"
+    image: `${process.env.PUBLIC_URL}/pro1.jpg`
   },
   {
     title: "Project 2",
     description: "Design With HTML & CSS",
-    image: "/pro2.jpg"
+    image: `${process.env.PUBLIC_URL}/pro2.jpg`
   },
   {
     title: "Project 3",
     description: "Supermarket in bootstrap",
-    image: "/pro3.jpg"
-  },
+    image: `${process.env.PUBLIC_URL}/pro3.jpg`  },
   {
     title: "Project 4",
     description: "JavaScript Store",
-    image: "/pro4.jpg"
-  },
+    image: `${process.env.PUBLIC_URL}/pro4.jpg`  },
   {
     title: "Project 5",
     description: "Password Generator",
-    image: "/pro5.jpg"
-  },
+    image: `${process.env.PUBLIC_URL}/pro5.jpg`  },
   {
     title: "Project 6",
     description: "Responsive Portfolio",
-    image: "/pro6.jpg"
-  }
+    image: `${process.env.PUBLIC_URL}/pro6.jpg`  }
 ];
 
 function ProjectsSection() {
@@ -142,8 +139,7 @@ function ProjectsSection() {
         {activeTab === 1 && (
           <div ref={sectionRefs[1]} className="full-width-section">
             <div className="left-image">
-              <img src="/horse2.png" alt="Contact Illustration" />
-            </div>
+           <img src={`${process.env.PUBLIC_URL}/horse2.png`} alt="Contact Illustration" />            </div>
 
             <div className="contact-form">
               <h2>Get In Touch</h2>
@@ -165,7 +161,8 @@ function ProjectsSection() {
         {activeTab === 2 && (
           <div ref={sectionRefs[2]} className="full-width-section">
             <div className="left-image">
-              <img src="/horse2.png" alt="Contact Illustration" />
+              {/* <img src="/horse2.png" alt="Contact Illustration" /> */}
+              <img src={`${process.env.PUBLIC_URL}/horse2.png`} alt="Contact Illustration" />
             </div>
 
             <div className="contact-form">

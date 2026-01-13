@@ -44,7 +44,9 @@ function Home() {
   
 
   <div className="robot-section">
-    <img src="/falcon.png" alt="Falcon" className="robot" />
+    {/* <img src="/falcon.png" alt="Falcon" className="robot" /> */}
+    {/* <img src="falcon.png" alt="Falcon" className="robot" /> */}
+    <img src={`${process.env.PUBLIC_URL}/falcon.png`} alt="Falcon" className="robot" />
   </div>
 </div>
 
