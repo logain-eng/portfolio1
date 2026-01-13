@@ -1,0 +1,319 @@
+
+.projects-section {
+  text-align: center;
+  margin-top: 80px;
+  /* padding: 40px; */
+  color: white;
+}
+
+.projects-title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  margin-top: 180px;
+}
+
+.projects-intro {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
+.projects-introo {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  color: #ccc;
+  padding: 20px 20px 170px 20px ;
+}
+
+/* الحاوية */
+.tabs-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto;
+  min-width: 600px;
+   width: 100%;
+
+}
+
+.tabs-group {
+  display: flex;
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 60%;
+}
+
+/* الزر */
+.tab-item {
+  flex: 1;
+  padding: 1rem 0;
+  border: none;
+  background-color: transparent;
+  color: #ccc;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease;
+}
+
+/* فاصل بين الأزرار */
+.tab-item:not(:last-child) {
+  border-right: 1px solid #333;
+}
+
+/* التدرج الأساسي */
+.tab-item.active {
+  color: white;
+}
+
+/* دخول التدرج من اليسار → اليمين */
+.tab-item.active.animate-left {
+  animation: slideInLeft 0.5s forwards;
+}
+
+/* خروج التدرج من اليمين → اليسار */
+.tab-item.animate-right {
+  animation: slideOutRight 0.5s forwards;
+}
+
+/* دخول التدرج من اليسار → اليمين */
+@keyframes slideInLeft {
+  0% {
+    background: linear-gradient(to right, transparent, transparent);
+  }
+  100% {
+    background: linear-gradient(to right, aqua, #237b6a);
+  }
+}
+
+/* خروج التدرج من اليمين → اليسار */
+@keyframes slideOutRight {
+  0% {
+    background: linear-gradient(to right, aqua, #237b6a);
+  }
+  100% {
+    background: linear-gradient(to right, transparent, transparent);
+  }
+}
+/* Projects Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 280px); /* حجم ثابت لكل مربع */
+  gap: 20px;
+  justify-content: center; /* يخليهم بالنص */
+  padding: 20px;
+}
+
+/* Project Card */
+.project-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  height: 200px;
+  box-shadow: 0 0 12px rgba(128, 0, 255, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+}
+
+/* Project Image */
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Hover Overlay */
+ .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, aqua, #237b6a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  opacity: 0;
+  transform: translateY(-90px); /* يبدأ من تحت */
+  transition: opacity 0.9s ease, transform 0.4s ease;
+}
+
+.project-card:hover .overlay {
+  opacity: 1;
+  transform: translateY(0); /* يطلع لفوق لمكانه */
+}
+ 
+
+.overlay-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.overlay-content h3,
+.overlay-content p {
+  color: white;
+  margin: 0;
+}
+
+.overlay h3 {
+  color: white;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.project-card:hover .overlay {
+  opacity: 1;
+}
+
+.project-card:hover .overlay {
+  opacity: 1;
+}
+
+.overlay h3 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.overlay p {
+  font-size: 0.9rem;
+  color: #ddd;
+}
+
+/* Placeholder for other tabs */
+.tab-placeholder {
+  font-size: 1.2rem;
+  color: #aaa;
+  margin-top: 20px;
+}
+
+
+.full-width-section {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(45deg, aqua, #237b6a);
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
+  box-sizing: border-box;
+}
+
+ 
+.full-width-section {
+  position: relative;
+}
+
+
+.left-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.contact-form {
+  flex: 1;
+  /* background-color: white; */
+  padding: 2rem;
+  border-radius: 19px;
+  color: #333;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contact-form h2 {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  /* border: 1px solid #ccc; */
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+/* الحالة العادية */
+.contact-form input,
+.contact-form textarea {
+  background: transparent;
+  color: white; /* ← النص أبيض قبل الضغط */
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  transition: all 0.3s ease;
+}
+
+/* لون الـ placeholder قبل الضغط */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7); /* ← placeholder أبيض */
+}
+
+/* عند الضغط */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  background: white;
+  color: black; /* ← النص يصير أسود واضح */
+  border-color: white;
+  outline: none;
+}
+
+/* لون الـ placeholder عند الضغط (اختياري) */
+.contact-form input:focus::placeholder,
+.contact-form textarea:focus::placeholder {
+  color: rgba(0, 0, 0, 0.4); /* ← placeholder يصير رمادي خفيف */
+}
+.contact-form button {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(45deg, aqua, #237b6a);
+  color: white;
+  padding: 0.75rem 2rem;
+  border: 1px solid black;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  margin: left;
+}
+
+/* الشريط اللامع */
+.contact-form button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  transform: skewX(-20deg);
+  transition: left 0.8s ease; /* ← السرعة */
+}
+
+/* عند الهوفر يتحرك من اليسار لليمين */
+.contact-form button:hover::before {
+  left: 100%;
+}
+
+

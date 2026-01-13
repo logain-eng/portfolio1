@@ -1,0 +1,133 @@
+.cta-section {
+  background: linear-gradient(45deg, #000000, #002d2a);
+  padding: 3rem 1rem;
+  text-align: center;
+  color: white;
+  margin-top: -90px;
+}
+.cta-box {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  max-width: 1000px;
+  height: 100px;
+  margin: 0 auto 2rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+}
+.cta-text {
+  flex: 2;
+  font-size: 1.1rem;
+  color: #333;
+  text-align: left;
+  padding-top: 20px;
+}
+.email-wrapper {
+  position: relative;
+  flex: 1;
+  min-width: 200px;
+}
+.email-wrapper input {
+  width: 100%;
+  padding: 1rem 5rem 1.5rem 0.75rem; /* مساحة للزر داخل الحقل */
+  margin-top: 20px;
+  margin-left: -80px;
+  border: 2px solid rgb(5, 114, 114);
+  border-radius: 11px;
+}
+
+.inline-submit {
+  position: absolute;
+  top: 50%;
+  right: -0.6rem;
+  transform: translateY(-50%);
+  background: linear-gradient(45deg, #000000, aqua);
+  color: white;
+  border: none;
+  border-radius: 9px;
+  padding: 1.1rem 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 9px;
+}
+
+.inline-submit:hover {
+  background: linear-gradient(45deg, aqua, #025c6c);
+}
+.social-iconss {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 2rem;
+  width: 100%;
+  padding-top: 40px;
+}
+.social-iconss a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: black;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  font-size: 18px;
+  overflow: hidden;
+  transition: 0.3s ease;
+  z-index: 1;
+}
+.social-iconss a::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background-color: #00ffff; 
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s ease;
+  z-index: -1;
+}
+
+.social-iconss a:hover::after {
+  width: 100%;
+  height: 100%;
+}
+
+.social-iconss a:hover {
+  background-color: transparent;
+  color: black;
+}
+.footer-text {
+  font-size: 0.9rem;
+  color: #949292;
+  padding: 150px 90px 1px 600px;
+}
+.cta-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4rem;
+  width: 100%;
+}
+
+.cta-logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.cta-logo:hover {
+  color: #00ffff; 
+}

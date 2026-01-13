@@ -1,0 +1,41 @@
+
+ .skills-section {
+  text-align: center;
+  margin-top: -80px;
+}
+
+.skills-titlee {
+  color: white;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
+
+.skills-title {
+  color: rgb(146, 140, 140);
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+.skills-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skills-list {
+  display: flex;
+  gap: 30px;
+}
+
+.arrow-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.arrow-btn:hover {
+  transform: scale(1.2);
+}
