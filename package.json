@@ -1,5 +1,12 @@
-"homepage": "https://logain-eng.github.io/portfolio1",
+
+
+
 {
+  
+  "name": "portfolio",
+  "version": "1.0.0",
+  "homepage": "https://logain-eng.github.io/portfolio1",
+
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
