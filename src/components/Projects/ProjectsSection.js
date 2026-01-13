@@ -8,7 +8,6 @@ const projects = [
   {
     title: "Project 1",
     description: "Simple Design With HTML & CSS",
-    // image: "/pro1.jpg"
     image: `${process.env.PUBLIC_URL}/pro1.jpg`
   },
   {
